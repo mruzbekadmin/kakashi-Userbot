@@ -1,5 +1,5 @@
 from telethon import TelegramClient, events
-from magic import Magic
+from mode.magic import Magic
 import time
 magic = Magic()
 @events.register(events.NewMessage)
